@@ -18,8 +18,28 @@
     z-index: 10;
 }
 
+
 .navbar {
     transition: all 0.5s ease-in-out;
+}
+
+.bg-grain-secondary {
+    --grain-opacity: 1;       /* opacity of the image layer */
+    --color-opacity: 0.75;     /* opacity of the color layer */
+
+    background:
+        /* color layer */
+        linear-gradient(
+            rgba(var(--bs-secondary-rgb), var(--color-opacity)),
+            rgba(var(--bs-secondary-rgb), var(--color-opacity))
+        ),
+        /* image layer */
+        url('../assets/images/grain.svg');
+
+    background-size: 10%;
+    background-repeat: repeat;
+    background-position: center;
+    opacity: var(--grain-opacity);
 }
 
 .navbar-sticky {
