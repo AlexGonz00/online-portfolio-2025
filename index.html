@@ -39,29 +39,112 @@
     <!-- Header -->
     <header class="header vh-100 text-center position-relative">
       <div class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100">
-        <h1 class="m-0 text-light fw-bold">
+        <h1 class="m-0 fw-bold">
           Alex Gonzales
         </h1>
         <p class="text-primary fs-2 mt-0">
           <span>VR Developer</span>
         </p>
       </div>
+
+      <!-- svg curve -->
+      <svg class="btm-curve" viewBox="0 0 100 3">
+          <path d="M 0 0 C 20 3, 80 3, 100 0 L 100 10 L 0 10 L 0 0" fill="var(--bs-dark)"></path>
+      </svg>
     </header>
 
     <!-- Introduction -->
-    <section id="intro" class="intro bg-grain-secondary" style="height: 540px;">
+    <section id="intro" class="intro position-relative bg-grain-secondary">
+      <svg class="top-curve" viewBox="0 0 100 4">
+          <path d=" M 0 0 C 20 3, 80 3, 100 0 L 100 0 L 0 0 " fill="var(--bs-dark)"></path>
+      </svg>
+
       <div class="row h-100">
         <div class="col-lg-6 profile-pic position-relative">
           <div class="cover"></div>
         </div>
         <div class="col-lg-6">
-          <h3>Hello My name is Markiplier</h3>
+          <div class="mx-3 my-5 text-center justify-content-center">
+            <h1 class="text-uppercase fw-bold">Welcome to my <span class="text-primary">page</span></h1>
+
+            <hr class="hr-heading">
+
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. In deserunt sapiente consequatur facilis aliquam natus nihil, molestiae labore, autem cupiditate modi minima, distinctio quas optio qui fugit impedit. Nemo, soluta!</p>
+
+            <p><span class="fw-bold">Status:</span>
+              <br>
+              <span class="position-relative status-circle ms-2 me-3">
+              <span></span>
+            </span>
+              
+              Currently Seeking Work
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <svg class="btm-curve position-avsolute" viewBox="0 0 100 3" style="bottom: -1px;">
+        <path d="M 0 3 C 20 0, 80 0, 100 3 L 100 3 L 0 3" fill="var(--bs-dark)"></path>
+    </svg>
+      
+    </section>
+    
+    <!-- Background -->
+    <section id="background" class="position-relative bg-grain-secondary py-5">
+      <svg class="top-curve" viewBox="0 0 100 3">
+          <path d=" M 0 3 C 20 0, 80 0, 100 3 L 100 0 L 0 0 L 0 3 " fill="var(--bs-dark)"></path>
+      </svg>
+      
+      <div class="container">
+        <div class="row text-center justify-content-center">
+          <h1 class="text-uppercase fw-bold">Background & Experience</h1>
+
+          <hr class="hr-heading-full">
+
+          <p class="lead">Here are more details on my education, work experience, and relevant skills. You can also view my resume <a href="assets/docs/ResumeAlexGonzales.pdf" target="_blank" class="link">here</a>.</p>
+        </div>
+
+        <!-- Education -->
+        <div class="container p-4">
+          <div class="row">
+            <h2 class="fw-semibold">Education</h2>
+            <hr class="hr-heading m-2">
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="card card-clip p-4">
+                <div class="card-body">
+                  <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col text-center justify-content-center">
+                      <h3 class="mb-3 fw-semibold">Texas A&M University</h3>
+                      
+                      <div class="ratio ratio-1x1 logo-wrapper mx-auto">
+                        <div class="logo-front logo"></div>
+                        <div class="logo-back logo"></div>
+                      </div>
+                      
+                      <h4 class="my-3">College Station, TX</h4>
+                    </div>
+
+                    <div class="col">
+                      <h3 class="text-primary">Bachelor of Science, Major in Computer Science, Minor in Philosophy</h3>
+                      <p><span class="fw-bold">Areas of Interest:</span> Computer Graphics/Animation, Virtual Reality, Robotics and Spatial Intelligence, Artificial Intelligence</p>
+
+                      <h4 class="mt-2"><a href="https://www.aggiescreate.com/" target="_blank" class="link">Texas A&M Game Developers</a></h4>
+                      <p>Participated in multiple semester-long game jams, utilizing mostly Unity 2D and 3D</p>
+
+                      <h4><a href="https://www.aggiescreate.com/" target="_blank" class="link">Aggies Create</a></h4>
+                      <p>Worked with other students in an <a class="link" style="box-shadow: inset 0 0 rgba(193, 227, 68, 0.5); " href="https://www.sick.com/us/en/sick-10k-challenge/w/10K-Challenge/" target="_blank">intercollegiate competition</a> where we utilized 2D LIDAR sensor technology</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
