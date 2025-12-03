@@ -1,3 +1,7 @@
+:root {
+  --card-transition-time: 0.2s;
+}
+
 .header {
     background: #151515 url('../assets/images/intro-bg.jpg') no-repeat center center;
     background-size: cover;
@@ -198,6 +202,11 @@
   padding: 24px;
   border: none;
   clip-path: polygon(0 0,calc(100% - 30px) 0,100% 30px,100% 100%,30px 100%,0 calc(100% - 30px));
+  transition: all 0.25s ease-in-out;
+}
+
+.card-clip:hover {
+  transform: scale(1.03);
 }
 
 .logo-wrapper {
@@ -232,6 +241,48 @@
 .logo-wrapper:hover .logo-back {
   opacity: 1;
   transform: scale(1.05);
+}
+
+.skill-card {
+  transition: all 0.2s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  background: rgba(var(--bs-dark-rgb), 0.5) !important;
+}
+
+.skill-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-card-title {
+  color: transparent;
+  transition: all 0.15s ease-in-out;
+}
+
+.card:hover .skill-card-title {
+  color: var(--bs-light) !important;
+}
+
+// changes svg color on hover
+.card:hover .skill-icon svg {
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover .skill-icon svg {
+  fill: var(--bs-light);
+}
+
+.card:hover .skill-icon svg #capcut-stroke {
+  fill: none !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover .skill-icon svg #capcut-stroke {
+  stroke: var(--bs-light);
 }
 
 @media (max-width: 992px) {
