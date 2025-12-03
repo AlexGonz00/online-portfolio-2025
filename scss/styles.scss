@@ -46,6 +46,25 @@
     opacity: var(--grain-opacity);
 }
 
+.bg-grain-dark {
+    --grain-opacity: 1;
+    --color-opacity: 0.75;
+
+    background:
+        /* color layer */
+        linear-gradient(
+            rgba(var(--bs-dark-rgb), var(--color-opacity)),
+            rgba(var(--bs-dark-rgb), var(--color-opacity))
+        ),
+        /* image layer */
+        url('../assets/images/grain.svg');
+
+    background-size: 10%;
+    background-repeat: repeat;
+    background-position: center;
+    opacity: var(--grain-opacity);
+}
+
 .navbar-sticky {
     opacity: 0.8;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -285,6 +304,31 @@
   stroke: var(--bs-light);
 }
 
+.contact-pic {
+  background: none;
+
+  width: 200px;
+  height: 200px;
+  margin: 2.5rem auto; /* center horizontally */
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-pic::after {
+  background: none;
+}
+
+.contact-pic::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../assets/images/alex_pic_dapper.jpg')
+              no-repeat center center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
 @media (max-width: 992px) {
     .profile-pic {
     /* Remove the background cover image */
@@ -311,5 +355,11 @@
                 no-repeat center center;
     background-size: cover;
     border-radius: 50%;
+  }
+
+  .contact-pic {
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
 }
