@@ -43,22 +43,74 @@
     </div>
 
     <!-- Header -->
+    <header class="header vh-100 position-relative overflow-hidden">
+      <div class="carousel slide h-100" 
+        id="heroVideoCarousel"
+        data-bs-ride="carousel"
+        data-bs-interval="false">
+        <div class="carousel-inner h-100">
+
+
+          <!-- Still frame as background, before video loads -->
+          <div class="carousel-item active h-100" style="background: url(assets/video/construction_thumbnail.png); background-size: cover; background-position: center;">
+            <video class="" autoplay muted playsinline>
+              <source src="assets/video/construction_programming.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="carousel-item h-100">
+            <video class="" muted playsinline>
+              <source src="assets/video/minigolf.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="carousel-item h-100">
+            <video class="" muted playsinline>
+              <source src="assets/video/solsticer_moves.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="carousel-item h-100">
+            <video class="" muted playsinline>
+              <source src="assets/video/arbito_run.mp4" type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Overlay -->
+  <div class="header-overlay"></div>
+
+  <!-- Centered Text -->
+  <div class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100">
+    <h1 class="m-0 fw-bold display-3">Alex Gonzales</h1>
+    <p class="text-primary fs-2 mt-0"><span>VR Developer</span></p>
+  </div>
+      
+      <!-- svg curve -->
+      <svg class="btm-curve" viewBox="0 0 100 3">
+        <path d="M 0 0 C 20 3, 80 3, 100 0 L 100 10 L 0 10 L 0 0" fill="var(--bs-dark)"></path>
+      </svg>
+    </header>
+
+    <!-- Header
     <header class="header vh-100 text-center position-relative">
       <div class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100">
-        <h1 class="m-0 fw-bold">
+        <h1 class="m-0 fw-bold display-3">
           Alex Gonzales
         </h1>
         <p class="text-primary fs-2 mt-0">
           <span>VR Developer</span>
         </p>
       </div>
-
-      <!-- svg curve -->
+      
       <svg class="btm-curve" viewBox="0 0 100 3">
-          <path d="M 0 0 C 20 3, 80 3, 100 0 L 100 10 L 0 10 L 0 0" fill="var(--bs-dark)"></path>
+        <path d="M 0 0 C 20 3, 80 3, 100 0 L 100 10 L 0 10 L 0 0" fill="var(--bs-dark)"></path>
       </svg>
     </header>
-
+    -->
+    
     <!-- Introduction -->
     <section id="intro" class="intro position-relative bg-grain-secondary">
       <svg class="top-curve" viewBox="0 0 100 4">
@@ -66,12 +118,12 @@
       </svg>
 
       <div class="row h-100">
-        <div class="col-lg-6 profile-pic position-relative">
+        <div class="col-lg-5 profile-pic position-relative">
           <div class="cover"></div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <div class="mx-3 my-5 text-center justify-content-center">
-            <h1 class="text-uppercase fw-bold">Welcome to my <span class="text-primary">page</span></h1>
+            <h1 class="text-uppercase fw-bold"><span class="text-primary">Howdy!</span> Make yourself at home</h1>
 
             <hr class="hr-heading">
 
@@ -279,10 +331,12 @@
           <h1 class="text-uppercase fw-bold">Skills</h1>
 
           <hr class="hr-heading-full">
-        </div>
 
+        </div>
+        
         <!-- Skills Row 1 -->
         <div class="row px-5 py-2">
+          <p class="text-body-color text-start" style="opacity: 0.7; font-size: 14px;">* This is a nonexhaustive list, and mainly serves as a reference point</p>
           <div class="col-6 col-lg-2">
             <div class="card skill-card bg-transparent border-0 text-center justify-content-center mb-3 pt-2 pb-0">
               <div class="card-img skill-icon">
