@@ -53,25 +53,25 @@
 
           <!-- Still frame as background, before video loads -->
           <div class="carousel-item active h-100" style="background: url(assets/video/construction_thumbnail.png); background-size: cover; background-position: center;">
-            <video class="" autoplay muted playsinline>
+            <video class="header-video" autoplay muted playsinline>
               <source src="assets/video/construction_programming.mp4" type="video/mp4">
             </video>
           </div>
 
           <div class="carousel-item h-100">
-            <video class="" muted playsinline>
+            <video class="header-video" muted playsinline>
               <source src="assets/video/minigolf.mp4" type="video/mp4">
             </video>
           </div>
 
           <div class="carousel-item h-100">
-            <video class="" muted playsinline>
+            <video class="header-video" muted playsinline>
               <source src="assets/video/solsticer_moves.mp4" type="video/mp4">
             </video>
           </div>
 
           <div class="carousel-item h-100">
-            <video class="" muted playsinline>
+            <video class="header-video" muted playsinline>
               <source src="assets/video/arbito_run.mp4" type="video/mp4">
             </video>
           </div>
@@ -113,7 +113,7 @@
     
     <!-- Introduction -->
     <section id="intro" class="intro position-relative bg-grain-secondary">
-      <svg class="top-curve" viewBox="0 0 100 4">
+      <svg class="top-curve" viewBox="0 0 100 4" style="top: -1px;">
           <path d=" M 0 0 C 20 3, 80 3, 100 0 L 100 0 L 0 0 " fill="var(--bs-dark)"></path>
       </svg>
 
@@ -642,32 +642,33 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-8">
-            <div class="mb-5">
-              <input type="text"
-              class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted"
-              name="name"
-              placeholder="name"
-            />
-            </div>
-            <div class="mb-5">
-              <input type="email"
+          <form action="https://formspree.io/f/mrbnlwgy" method="POST">
+            <div class="col-lg-8">
+              <div class="mb-5">
+                <input type="text"
                 class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted"
-                name="email"
-                placeholder="Email"
+                name="name"
+                placeholder="name"
               />
+              </div>
+              <div class="mb-5">
+                <input type="email"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-5">
+                <textarea class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted"
+                name="message"
+                placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="mb-5 px-5 d-grid">
+                <button type="submit" class="btn btn-primary text-body rounded-5">Submit</button>
+              </div>
             </div>
-            <div class="mb-5">
-              <textarea class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted"
-              name="message"
-              placeholder="Message"
-              ></textarea>
-            </div>
-            <div class="mb-5 px-5 d-grid">
-              <button type="submit" class="btn btn-primary text-body rounded-5">Submit</button>
-            </div>
-          </div>
-
+          </form>
           <!-- Contact Profile Pic-->
           <div class="col-lg-4 contact-pic"></div>
         </div>
