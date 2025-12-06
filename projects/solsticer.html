@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/lightbox.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Alex Gonzales | Developer</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navbar fixed-top navbar-dark">
+      <div class="container">
+        <ul class="navbar-nav flex-row mx-auto">
+          <li class="nav-item">
+            <a href="../index.html" class="text-primary nav-link fw-semibold px-3">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#intro" class="text-primary nav-link fw-semibold px-3">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="../project_home.html" class="text-primary nav-link fw-semibold px-3">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#contact" class="text-primary nav-link fw-semibold px-3">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/AlexGonz00" target="_blank" class="text-primary nav-link fw-semibold px-3">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="project-video-header text-center position-relative">
+      <video class="header-video" autoplay muted loop playsinline>
+        <source src="../assets/video/solister.mp4" type="video/mp4">
+      </video>
+
+      <div class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100">
+        <h1 class="m-0 fw-bold display-4">Solsticer</h1>
+        <p class="text-light fs-5 mt-0"><span>A 2D platformer</span></p>
+      </div>
+
+      <svg class="btm-curve" viewBox="0 0 100 3">
+        <path d="M 0 0 C 20 3, 80 3, 100 0 L 100 10 L 0 10 L 0 0" fill="var(--bs-dark)"></path>
+      </svg>
+    </header>
+    
+    <section class="position-relative bg-grain-dark">
+      <svg class="top-curve" viewBox="0 0 100 4" style="top: -1px;">
+        <path d=" M 0 0 C 20 3, 80 3, 100 0 L 100 0 L 0 0 " fill="var(--bs-dark)"></path>
+      </svg>
+      
+      <div class="container pt-5 pb-3">
+        <div class="row">
+          <div class="col-12 text-center text-lg-start">
+            <p class="lead">Over a ten day game jam, I developed a retro platformer about a robot on a mission to punch the sun. It was largly inspired by the hit game Celeste, and using the extra time I had, I added multiple endings for the game.
+            </p>
+            <div class="d-flex justify-content-center justify-content-lg-start pb-3">
+              <div class="project-btn-wrapper position-relative">
+                <a href="https://galvingreen.itch.io/solsticer" target="_blank" class="btn btn-secondary project-btn-clip d-flex align-items-center gap-2 justify-content-center text-decoration-none text-primary">
+                  <i class="fab fa-itch-io fa-2x"></i>
+                  <span>itch.io Page</span>
+                </a>
+                <div class="project-btn-shadow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Modal -->
+      <div class="video-modal">
+        <div id="videoModal" class="modal fade">
+          <div class="modal-dialog mx-auto">
+            <div class="modal-content">
+              <div class="ratio ratio-16x9">
+                <iframe frameborder="0" class="embed-responsive-item" id="video"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-grain-dark pt-5 pb-3 position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-6" style="opacity: 0.6;">
+            <h5 class="text-light mb-0">(210) 710-8798</h5>
+            <h5 class="mb-3"><a class="link-light" href="mailto:agonzales98769@gmail.com">agonzales98769@gmail.com</a></h5>
+
+            <div class="hstack gap-3">
+              <a class="text-decoration-none nav-link" target="_blank" href="https://www.linkedin.com/in/alexander-gonzales-638a81168/">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a class="text-decoration-none nav-link" target="_blank" href="https://github.com/AlexGonz00">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 text-end d-flex flex-column justify-content-end" style="opacity: 0.6;">
+            <p class="mb-0">Website by Alex Gonzales, available on <a class="link" target="_blank" href="https://github.com/AlexGonz00/online-portfolio-2025">GitHub</a></p>
+            <p>Icons provided by <a href="https://fontawesome.com/" class="link" target="_blank">Font Awesome</a> and <a class="link" target="_blank" href="https://www.svgrepo.com">SVG Repo</a></p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

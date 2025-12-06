@@ -439,9 +439,10 @@
 }
 
 .project-header {
-  background: #151515 url('../assets/images/intro-bg.jpg') no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
 }
 
 .project-header::after {
@@ -456,6 +457,39 @@
   
 .project-header .text-container {
   z-index: 10;
+}
+
+.project-video-header {
+  position: relative;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.project-video-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.header-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.project-header .text-container {
+  position: relative;
+  z-index: 2;
 }
 
 .video-wrapper {
@@ -562,7 +596,6 @@
 .project-btn-clip {
   position:relative;
   border: none;
-  width: 150px;
   clip-path: polygon(0 0,calc(100% - 15px) 0,100% 15px,100% 100%,15px 100%,0 calc(100% - 15px));
   isolation: isolate;
   transition: all 0.15s ease-in-out;
@@ -575,7 +608,7 @@
   position: absolute;
   inset: 0;
   background: url("../assets/images/grain.svg");
-  background-size: 100%;
+  background-size: 80%;
   background-repeat: repeat;
   background-position: center;
   //background: rgba(var(--bs-dark-rgb), 0.5);
@@ -608,20 +641,18 @@
   z-index: 0;
 }
 
-/*
-.project-btn-shadow::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url("../assets/images/grain.svg");
-  background-size: 100%;
-  background-repeat: repeat;
-  background-position: center;
-  //background: rgba(var(--bs-dark-rgb), 0.5);
-  pointer-events: none;
-  z-index: -2;
+.project-img-clip {
+  position: relative;
+  background-color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  padding: 0px;
+  border: none;
+  clip-path: polygon(0 0,calc(100% - 30px) 0,100% 30px,100% 100%,30px 100%,0 calc(100% - 30px));
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
 }
-*/
 
 @media (max-width: 992px) {
     .profile-pic {
