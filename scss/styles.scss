@@ -141,9 +141,10 @@
 }
 
 .profile-pic {
-    background: var(--bs-primary) url('../assets/images/alex_pic_dapper.jpg') no-repeat center center;
+    background: var(--bs-primary) url('../assets/images/alexander_gonzales_portrait.JPG');
+    background-repeat: no-repeat;
+    background-position: center -120px;
     background-size: cover;
-    background-position-y: top;
     position: relative;
 }
 
@@ -371,10 +372,16 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url('../assets/images/alex_pic_dapper.jpg')
-              no-repeat center center;
+  background: url('../assets/images/alex_pic_dapper.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   border-radius: 50%;
+}
+
+.project-link {
+  display: block;
+  clip-path: polygon(0 0,calc(100% - 30px) 0,100% 30px,100% 100%,30px 100%,0 calc(100% - 30px));
 }
 
 .project-card-clip {
@@ -477,10 +484,7 @@
 .project-video-header::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0,0,0,0.5);
   z-index: 1;
 }
@@ -489,10 +493,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   transform: translate(-50%, -50%);
+  object-fit: cover;
   z-index: 0;
 }
 
@@ -684,7 +690,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: url('../assets/images/alex_pic_dapper.jpg')
+    background: url('../assets/images/alexander_gonzales_portrait.JPG')
                 no-repeat center center;
     background-size: cover;
     border-radius: 50%;
@@ -697,8 +703,14 @@
   }
   
   .project-card-clip {
-    width: 90%;
-    height: 280px;
+    width: 420px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-link {
+    width: 420px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -722,5 +734,42 @@
   .nav-link:hover {
       color: var(--bs-light) !important;
       transform: scale(1);
+  }
+
+  .footer-text-left {
+    font-size: 12px;
+  }
+
+  .footer-text-left .link-light {
+    font-size: 12px;
+  }
+
+  .footer-text-right {
+    font-size: 12px;
+  }
+
+  .footer-text-right .link {
+    font-size: 12px;
+  }
+
+  .project-card-clip {
+    width: 340px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-link {
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-overlay h4 {
+    font-size: 20px;
+  }
+
+  .project-overlay div div span {
+    font-size: 12px;
   }
 }
