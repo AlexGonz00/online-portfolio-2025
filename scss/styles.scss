@@ -2,6 +2,10 @@
   --card-transition-time: 0.2s;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 /*
 .header {
   background: #151515 url('../assets/images/intro-bg.jpg') no-repeat center center;
