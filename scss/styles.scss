@@ -315,6 +315,14 @@ html, body {
   transform: scale(1.05);
 }
 
+.certification-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.certification-card:hover {
+  transform: scale(1.04);
+}
+
 .skill-card {
   transition: all 0.2s ease-in-out;
 }
