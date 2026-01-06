@@ -95,3 +95,22 @@ if (checkReplace !== null) {
     autoRun: true,
   });
 }
+
+// Fade in on scroll
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("fadeInTop");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.2 // 20% is visible
+  }
+);
+
+document.querySelectorAll(".fadeIn-animated").forEach(el => {
+  observer.observe(el);
+});
