@@ -396,6 +396,26 @@ html, body {
   opacity: 0;
 }
 
+.fadeIn-delay-1 {
+  animation-delay: 0.1s !important;
+}
+
+.fadeIn-delay-2 {
+  animation-delay: 0.2s !important;
+}
+
+.fadeIn-delay-3 {
+  animation-delay: 0.3s !important;
+}
+
+.fadeIn-delay-4 {
+  animation-delay: 0.4s !important;
+}
+
+.fadeIn-delay-5 {
+  animation-delay: 0.5s !important;
+}
+
 .fadeInTop {
   -webkit-animation: fadeInTop 1.2s both;
   -moz-animation: fadeInTop 1.2s both;
@@ -778,6 +798,26 @@ html, body {
     width: 420px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .fadeIn-delay-1 {
+    animation-delay: 0.1s !important;
+  }
+
+  .fadeIn-delay-2 {
+    animation-delay: 0s !important;
+  }
+
+  .fadeIn-delay-3 {
+    animation-delay: 0.1s !important;
+  }
+
+  .fadeIn-delay-4 {
+    animation-delay: 0s !important;
+  }
+
+  .fadeIn-delay-5 {
+    animation-delay: 0.1s !important;
   }
 }
 

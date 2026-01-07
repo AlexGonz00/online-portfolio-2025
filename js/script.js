@@ -107,7 +107,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.2 // 20% is visible
+    threshold: 0.3 // 30% is visible
   }
 );
 
