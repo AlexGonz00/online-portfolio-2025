@@ -21,6 +21,7 @@
     <link rel="icon" type="image/png" href="assets/alex_icon.png" sizes="32x32">
   </head>
   <body>
+    
     <!-- Navigation -->
     <div class="navbar navbar-expand-md fixed-top navbar-dark">
       <div class="container">
@@ -765,7 +766,21 @@
 
       </div>
     </footer>
+
+    <div class="loader-wrapper">
+      <span class="loader">
+        <span class="loader-inner"></span>
+      </span>
+    </div>
     
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+      $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
+
     <script src="js/replaceme.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>

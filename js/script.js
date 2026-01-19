@@ -114,3 +114,8 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".fadeIn-animated").forEach(el => {
   observer.observe(el);
 });
+
+// loader animation
+$(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+});
