@@ -417,10 +417,14 @@ html, body {
 }
 
 .fadeInTop {
-  -webkit-animation: fadeInTop 1.2s both;
-  -moz-animation: fadeInTop 1.2s both;
-  -o-animation: fadeInTop 1.2s both;
-  animation: fadeInTop 1.2s both;
+  -webkit-animation: fadeInTop 0.8s both;
+  -moz-animation: fadeInTop 0.8s both;
+  -o-animation: fadeInTop 0.8s both;
+  animation: fadeInTop 0.8s both;
+}
+
+.fadeIn-project-delay {
+  animation-delay: 0.2s !important;
 }
 
 @-webkit-keyframes fadeInTop {
@@ -863,6 +867,10 @@ html, body {
 
   .fadeIn-delay-5 {
     animation-delay: 0.1s !important;
+  }
+
+  .fadeIn-project-delay {
+    animation-delay: 0s !important;
   }
 }
 
