@@ -208,8 +208,8 @@ html, body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--bs-primary);
-  animation: pulse-border 1200ms ease-in-out infinite;
+  background: #93C572;
+  animation: pulse-border 1600ms ease-in-out infinite;
 }
 
 .status-circle::after {
@@ -222,7 +222,7 @@ html, body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--bs-primary);
+  background: #93C572;
 }
 
 @keyframes pulse-border {
